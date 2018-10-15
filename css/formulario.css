@@ -1,0 +1,127 @@
+/*Cuerpo de la Página*/
+body {
+	background:#fff;
+	color: black;
+    width: 100%;
+    margin: 0%;
+}
+
+/*Todo lo de la barra superior*/
+header {
+	width:100%;
+	padding:20px;
+	background: #85d4b7;
+
+	/* Flexbox */
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+    flex-wrap:wrap;
+    margin: 0%;
+}
+
+/*Cuadro donde va el Logo y el Nombre de la Fundación*/
+header .logo {
+	color:#fff;
+	font-size:30px;
+}
+
+/*Logo*/
+header .logo img {
+	width:50px;
+	vertical-align: top;
+}
+
+header .logo a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
+
+/*Menú Superior*/
+header nav {
+	width:50%;
+	margin-right: 100px;
+
+	/* Flexbox */
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+
+header nav a {
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:10px;
+}
+
+header nav a:hover {
+	background:#6dccaa
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.formulario {
+    background:white;
+    width: 450px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+
+}
+.formulario-titulo{
+    text-align: center;
+    margin-top: 0%;
+    color: rgba(0,0,0,0.7);
+}
+.formulario-input, .formulario-label,
+.formulario-submit {
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+}
+.formulario-input{
+    padding: 20px;
+    background: rgba(0, 0, 0,0.1);
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+.formulario-input:focus{
+    outline: 1px solid rgba(0,0,0,0.7);
+}
+.formulario-input:focus + .formulario-label{
+    margin-top: -130px;
+
+}
+
+.formulario-label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -85px;
+    z-index: -20;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s;
+}
+.formulario-submit{
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+footer{
+	background:gray;
+	padding:10px;
+	width:100%;
+}

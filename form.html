@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="css/formulario.css">
+        <title>Formulario Adopción Mis Perris</title>
+    </head>
+    <body>
+      <div class="contenedor">
+    		<header> 
+    			<div class="logo">
+    				<img src="img/logo.png" alt="Logo">
+    				<a href="#">Mis Perris</a>
+    			</div>
+
+    			<nav> 
+    				<a href="index.html">Inicio</a>
+    				<a href="index.html#info">Quienes Somos</a>
+    				<a href="registro.html">Adoptar</a>
+    				<a href="#">Contáctanos</a>
+                </nav>
+                
+            </header>
+            <form action="" class="formulario">
+                <h1 class="formularios-titulo">Contáctenos</h1>
+                <input type="email" class="formulario-input" placeholder="Ingrese  Correo Electronico">
+                <label for="" class="formulario-label">Correo</label>
+        
+                <input type="text" class="formulario-input" placeholder="Ingrese Nombre Completo">
+                <label for="" class="formulario-label">Nombre Completo</label>
+                
+                <input type="text" class="formulario-input"  placeholder="Ingrese Telefono De Contacto">
+                <label for="" class="formulario-label">Teléfono de contacto</label>
+        
+        
+                <label for="txtRut">Rut:</label>
+                <input id="txtRut" type="text"
+                    onkeyup="modifyText()" placeholder="Ingrese Rut" required />
+        
+            </br>
+        
+        
+                <label for="txtDate">Fecha de nacimiento</label>
+                <input type="date" id="txtDate" placeholder="ingrese fecha" required
+                    max="2000-12-31" />
+        
+                    <br />
+                
+        
+                <label for="txtRegion">Region</label>
+                <select id="txtRegion" oninput="selectCity()">     
+                </select>
+                <br />
+                <label for="txtCity">Ciudad</label>
+                <select id="txtCity">
+        
+                </select>
+                <script src="JavaScript/ciudad.js"></script>
+                
+                <br />
+        
+                <label >Tipo de vivienda</label>
+                <select id="lista" name="lista">
+                    <option> Casa con patio grande </option>
+                    <option> Casa con patio pequeño </option>
+                    <option> Casa sin patio </option>
+                    <option> Departamento </option>
+        
+                </select>
+        
+        
+                <input type="submit" class="formulario-submit">
+            </form>
+         <footer>
+           Todos los derechos Reservados &#169;
+         </footer>  
+            <script src="js/verificar.js"> </script> 
+    </body>
